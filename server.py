@@ -7,22 +7,14 @@ app = Flask(__name__)
 def homepage():
     return render_template('index.html')
 
-@app.route('/index.html') # <--- if using nav bar
-def homepage2():
-    return render_template('index.html')
-
-@app.route('/contact.html')
+@app.route('/contact')
 def contact():
     return render_template('contact.html')
 
-@app.route('/about.html')
+@app.route('/about')
 def about():
     return render_template('about.html')
 
-@app.route('/work.html')
-def work():
-    return render_template('work.html')
-
-@app.route('/works.html')
+@app.route('/works')
 def works():
     return render_template('works.html')
