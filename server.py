@@ -11,10 +11,6 @@ def homepage():
 def homepage2():
     return render_template('index.html')
 
-@app.route('/components.html')
-def components():
-    return render_template('components.html')
-
 @app.route('/contact.html')
 def contact():
     return render_template('contact.html')
